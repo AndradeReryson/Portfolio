@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg2153"
+   width="500"
+   height="500"
+   viewBox="0 0 500 500"
+   sodipodi:docname="contato_telefone.svg"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2157" />
+  <sodipodi:namedview
+     id="namedview2155"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="0.40419255"
+     inkscape:cx="206.58471"
+     inkscape:cy="376.05839"
+     inkscape:window-width="1366"
+     inkscape:window-height="706"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g2159" />
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="Image"
+     id="g2159">
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.30552"
+       d="M 232.75237,1.7315245 C 174.78064,9.3431395 122.50059,27.092633 78.700701,67.875989 c -103.73539,96.591051 -103.73513,268.721601 0,365.312001 29.802079,27.75019 66.643019,47.44269 105.747339,58.31247 30.24504,8.40626 62.90138,10.43896 93.99763,6.70909 C 403.40246,483.21562 496.59981,376.82858 499.05941,251.83784 501.74357,115.37221 373.28928,-16.720837 232.75237,1.7315245 M 164.8652,109.17424 c 11.00816,0.61307 19.63114,15.80061 25.02295,23.86104 9.98986,14.93256 24.64566,29.07921 23.20958,48.30433 -1.27811,17.11149 -23.91065,24.96029 -14.29025,44.38777 1.86037,3.7573 4.48708,7.21302 7.13599,10.44419 13.80329,16.84124 30.98658,31.61845 46.39174,46.99881 8.16083,8.14777 18.09716,18.8648 30.02703,20.90142 13.93906,2.37997 21.08419,-11.74579 32.63806,-16.02138 15.80596,-5.84874 31.10016,7.69476 43.08225,15.79422 10.67395,7.21432 28.6758,15.82946 32.97359,28.9356 6.78349,20.68731 -23.85713,42.46996 -40.80673,44.16453 -23.68087,2.36822 -49.79655,-8.71175 -70.49822,-19.03713 -56.88815,-28.37423 -111.70966,-84.18663 -139.3541,-141.31891 -14.83844,-30.66804 -31.28267,-77.38355 4.88527,-99.71635 5.23514,-3.23273 13.18969,-8.05416 19.58284,-7.69814 z"
+       id="path2279" />
+  </g>
+</svg>

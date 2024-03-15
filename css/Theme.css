@@ -1,0 +1,122 @@
+:root{
+    --cor-preto: #000000;
+    --cor-branco: #ffffff;
+    --cor-laranja-fraco: #FC9E4F;
+    --cor-laranja-forte: #FF521B;
+
+    font-size: 16px;
+    font-weight: normal;
+    font-family: 'trebuchet MS', Verdana, sans-serif;
+}
+
+.font-bold{
+    font-weight: bold;
+}
+
+.font-lighter{
+    font-weight: lighter;
+}
+
+/* Alteram cor de fundo */
+.background--laranja-forte{
+    background-color: var(--cor-laranja-forte);
+}
+
+.background--laranja-fraco{
+    background-color: var(--cor-laranja-fraco);
+}
+
+.background--preto{
+    background-color: var(--cor-preto);
+}
+
+.background--branco{
+    background-color: var(--cor-branco);
+}
+
+/* Alteram cor das letras */
+.typeface--laranja-forte{
+    color: var(--cor-laranja-forte);
+}
+
+.typeface--laranja-fraco{
+    color: var(--cor-laranja-fraco);
+}
+
+.typeface--preto{
+    color: var(--cor-preto)
+}
+
+.typeface--branco{
+    color: var(--cor-branco);
+}
+
+/* Bordas */
+.border--branco{
+    border: 0.2rem solid var(--cor-branco);
+    transition: 0.2s;
+}
+
+    .border--branco:hover{
+        background-color: var(--cor-branco);
+        color: var(--cor-preto);
+        transition: 0.4s;
+    }
+
+.border--preto{
+    border: 0.2rem solid var(--cor-preto);
+    transition: 0.2s;
+}
+
+    .border--preto:hover{
+        background-color: var(--cor-preto);
+        color: var(--cor-branco);
+        transition: 0.4s;
+    }
+
+.border--laranja-fraco{
+    border: 0.2rem solid var(--cor-laranja-fraco);
+    transition: 0.2s;
+}
+
+    .border--laranja-fraco:hover{
+        background-color: var(--cor-laranja-fraco);
+        color: var(--cor-preto);
+        transition: 0.4s;
+    }
+
+.border--laranja-forte{
+    border: 0.2rem solid var(--cor-laranja-forte);
+    transition: 0.2s;
+}
+
+    .border--laranja-forte:hover{
+        background-color: var(--cor-laranja-forte);
+        color: var(--cor-branco);
+        transition: 0.4s;
+    }
+
+    
+
+/* SCROLL BAR */
+
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: var(--cor-branco);
+}
+
+::-webkit-scrollbar
+{
+	width: 6px;
+    height: 6px;
+	background-color: var(--cor-branco);
+}
+
+::-webkit-scrollbar-thumb
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: var(--cor-laranja-forte);
+}

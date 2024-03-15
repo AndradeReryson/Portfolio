@@ -1,0 +1,145 @@
+@keyframes typing {
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+        overflow: visible;
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        transform: translateX(-100px);
+        filter: blur(5);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0px);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInBottom{
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn{
+    from {
+        transform: translateY(-20px);
+        filter: blur(5);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0px);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+@keyframes glow{
+    0%{
+        box-shadow: 0px -5px 20px var(--cor-laranja-fraco),
+                    0px 5px 20px var(--cor-laranja-fraco),
+                    -5px 0px 20px var(--cor-laranja-fraco),
+                    5px 0px 20px var(--cor-laranja-fraco);
+    }
+    50%{
+        box-shadow: 0px -15px 50px var(--cor-laranja-fraco),
+                    0px 15px 50px var(--cor-laranja-fraco),
+                    -15px 0px 50px var(--cor-laranja-fraco),
+                    15px 0px 50px var(--cor-laranja-fraco);
+    }
+    100%{
+        box-shadow: 0px -5px 20px var(--cor-laranja-fraco),
+                    0px 5px 20px var(--cor-laranja-fraco),
+                    -5px 0px 20px var(--cor-laranja-fraco),
+                    5px 0px 20px var(--cor-laranja-fraco);
+    }
+}
+
+/* Classes */
+/* a classe 'active' é adicionada pelo javascript quando o elemento entra na view (animation.js) */
+
+.delay-1s{
+    animation-delay: 1.5s !important;
+}
+
+.delay-2s{
+    animation-delay: 2s !important;
+}
+
+.fadeIn,
+.fadeInLeft,
+.fadeInRight{
+    opacity: 0;
+}
+
+.fadeInRight.active{
+    animation: fadeInLeft 1s ease-in-out forwards;
+}
+
+.fadeInLeft.active{
+    animation: fadeInLeft 1s ease-in-out forwards;
+}
+
+.fadeInBottom.active{
+    animation: fadeInBottom 1s ease-in-out forwards;
+}
+
+.fadeIn.active{
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+/* Circulos */
+
+.animateCircles.active > span{
+    animation: fadeInBottom 1s ease-in-out forwards;
+}
+
+/* GLOW */
+
+.glow.active{
+    animation: glow 5s ease-in-out;
+    animation-iteration-count: 10;
+}
+
+/* TYPE IN*/
+
+.typeIn,
+.typeInShort{
+    overflow: hidden;
+    width: 0;
+    white-space: nowrap;
+}
+
+.typeIn.active{
+    animation: typing 2.5s steps(30, end) forwards;
+}
+
+.typeInShort.active{
+    animation: typing 2.5s steps(50, end) forwards;
+}

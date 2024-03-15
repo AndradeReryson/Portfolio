@@ -1,0 +1,226 @@
+*, html{ 
+    scroll-behavior: smooth !important;
+}
+
+a{
+    color: var(--cor-preto);    
+    
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+a.link{
+    margin: 0 1.5rem;
+}
+
+.link:hover{
+    color: var(--cor-laranja-forte);
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    font-weight: normal;
+    margin: 1rem 0;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+h2{
+    font-size: 1.5rem;
+}
+
+h3{
+    font-size: 1.2rem;
+}
+
+h4,
+h5,
+p{
+    font-size: 1rem;
+}
+
+h6{
+    font-size: 0.5rem;
+}
+
+/* Foto */
+
+
+#pfp-box{
+    position: relative;
+}
+
+img.foto{
+    z-index: -1;
+    position: absolute;
+    border-radius: 50%; 
+    height: 40vh; 
+    width: 40vh;
+    top: calc(50% - 20vh);
+    left: calc(50% - 20vh);
+}
+
+#pfp-box::before{
+    content: '';
+    z-index: -2;
+    left: 0%;
+    top: 20%;
+    display: block;
+    position: absolute;
+    width: 40vh;
+    height: 40vh;
+    border-radius: 50%;
+    background-color: var(--cor-laranja-fraco);
+    opacity: 0;
+    animation: fadeInLeft 1s ease-in-out 1.5s forwards;
+}
+
+#pfp-box::after{
+    content: '';
+    z-index: -2;
+    left: 20vh;
+    bottom: 20%;
+    display: block;
+    position: absolute;
+    width: 40vh;
+    height: 40vh;
+    border-radius: 50%;
+    background-color: var(--cor-laranja-fraco);
+    opacity: 0;
+    animation: fadeInRight 1s ease-in-out 1.5s forwards;
+}
+
+/* icones linguagens */
+
+img.badge-img{ 
+    height: 5rem; 
+    width: 5rem;
+}
+
+.badge-box{
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5rem;
+}
+
+.badge-box > div{
+    display: flex;
+    flex-direction: column;
+}
+
+.badge-box > div img{
+    justify-self: center;
+    align-self: center;
+}
+
+/* Cards dos projetos */
+
+.circle{
+    padding: 0;
+    margin: 0;
+    border-radius: 50%;   
+    background-color: var(--cor-laranja-fraco);
+    position: relative;
+}
+
+    .size-1{
+        width: 8rem;
+        height: 8rem;
+        margin: 0 20% 2rem 20%;
+        opacity: 0;
+        animation-delay: 1.3s !important;
+        
+    }
+
+    .size-2{
+        width: 6rem;
+        height: 6rem;
+        margin: 0 20% 1.5rem 20%;
+        opacity: 0;
+        animation-delay: 1s !important;
+    }
+
+    .size-3{
+        width: 4rem;
+        height: 4rem;
+        margin: 0 20% 1rem 20%;
+        opacity: 0;
+        animation-delay: 0.7s !important;
+    }
+
+    .size-4{
+        width: 2rem;
+        height: 2rem;
+        margin: 0 20% 0.5rem 20%;
+        opacity: 0;
+        animation-delay: 0.4s !important;
+    }
+
+
+.projetos-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.projetos-box > :nth-child(1){
+    grid-column: 1 / 2;
+}
+
+.projetos-box > :nth-child(2){
+    grid-column: 2 / 5;
+    /* cards dos projetos ficam aqui dentro */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 90%; 
+    height: 80%;
+    justify-self: end;
+}
+
+.card-proj{
+    width: 80%;
+    height: 70%;
+    border: 2px solid black;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 1rem;
+}
+
+
+/* cards contatos */
+
+.contato-box{
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.card-contato{
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.card-contato a{
+    color: var(--cor-branco);
+}
+
+.card-contato img{
+    width: 6rem;
+    height: 6rem;
+    margin: 1rem 0;
+}
+
+@media only screen and (max-width: 600px){
+    #pfp-box::before,
+    #pfp-box::after{
+        content: none;
+    }
+}
